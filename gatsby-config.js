@@ -21,8 +21,9 @@ module.exports = {
       options: {
         // This is the path where the CMS will be available
         manualInit: true, 
-        modulePath: `C:\\Users\\kunal\\OneDrive\\Documents\\testdfs\\cms.js`,
-      },    },
+        modulePath: `${__dirname}/src/cms.js`, 
+      },
+    },
   ],
 };
 console.log('Contentful Space ID:', process.env.CONTENTFUL_SPACE_ID);
