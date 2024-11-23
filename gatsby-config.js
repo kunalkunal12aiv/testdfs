@@ -1,4 +1,5 @@
-require("dotenv").config({ path: "C:\\Users\\kunal\\OneDrive\\Documents\\testdfs\\contentful.env" });
+require("dotenv").config();
+
 module.exports = {
   siteMetadata: {
     title: `Gatsby Sydney Ecommerce Theme`,
@@ -13,18 +14,15 @@ module.exports = {
       options: {
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
         spaceId: process.env.CONTENTFUL_SPACE_ID,
-        environment: process.env.CONTENTFUL_ENVIRONMENT
+        environment: process.env.CONTENTFUL_ENVIRONMENT,
       },
     },
     {
       resolve: `gatsby-plugin-netlify-cms`,
       options: {
-        // This is the path where the CMS will be available
-        manualInit: true, 
-        modulePath: `${__dirname}/src/cms.js`, 
+        manualInit: true,
+        modulePath: `${__dirname}/cms.js`,  // Adjusted path for cms.js in root
       },
     },
   ],
 };
-console.log('Contentful Space ID:', process.env.CONTENTFUL_SPACE_ID);
-console.log('Contentful Access Token:', process.env.CONTENTFUL_ACCESS_TOKEN);
