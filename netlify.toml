@@ -10,3 +10,10 @@
   to = "/.netlify/images?url=/:splat&fm=webp"
   status = 200
   force = true
+
+# Add this redirect for Netlify CMS admin panel
+[[redirects]]
+  from = "/admin*"
+  to = "/admin"
+  status = 301
+  force = true

@@ -1,0 +1,17 @@
+backend:
+  name: github
+  repo: https://github.com/kunalkunal12aiv/testdfs # Replace with your GitHub repo name
+  branch: main
+
+media_folder: "static/images" # The folder where uploaded images will go
+public_folder: "/images"
+
+collections:
+  - name: "blog"
+    label: "Blog"
+    folder: "content/blog"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }

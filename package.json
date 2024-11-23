@@ -17,8 +17,16 @@
     "plop": "plop"
   },
   "dependencies": {
+    "@stackbit/cms-contentful": "^1.0.26",
+    "curl": "^0.1.4",
+    "dotenv": "^16.4.5",
     "gatsby": "^5.13.3",
     "gatsby-adapter-netlify": "^1.1.3",
+    "gatsby-plugin-image": "^3.14.0",
+    "gatsby-plugin-sharp": "^5.14.0",
+    "gatsby-source-contentful": "^8.14.0",
+    "gatsby-transformer-sharp": "^5.14.0",
+    "netlify-cms-app": "^2.15.72",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
